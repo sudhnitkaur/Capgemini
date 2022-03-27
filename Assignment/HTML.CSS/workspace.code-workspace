@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../Downloads/CapgeminiTraining-main/javaScriptAssignment"
+		},
+		{
+			"path": "../../../JAVASCRIPT"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "javaScriptAssignment"
+	}
+}

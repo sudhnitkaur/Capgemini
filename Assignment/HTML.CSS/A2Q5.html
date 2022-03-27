@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2Q5.css">
+  <link rel="stylesheet" href="Style2Q5.2.css">
+  <title>Restaurant Website!</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+              <a href="">Parauntha</a>
+            </li>
+            <li>
+              <a href="">Chole Bhature</a>
+            </li>
+            <li>
+              <a href="">Wines</a>
+            </li>
+            <li>
+              <a href="">Desserts</a>
+            </li>
+            <li>
+              <a href="">Reservations</a>
+            </li>
+          </ul>
+        </nav>
+    <div class="top">
+      <header class="hero">
+        <h1>Aloo Ka Parauntha</h1>
+        <p>Pretty Good Tacos!</p>
+      </header>
+      <div class="cta cta1">
+        <p class="price">Rs.60</p>
+        <p>Parauntha</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">Rs.180</p>
+        <p>Icecream</p>
+      </div>
+
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🍨</span>
+        <h3>Icecream</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍺</span>
+        <h3>Beer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍷</span>
+        <h3>Wine</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🎵</span>
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="aloo-paratha-1.jpg" alt="Yummy " class="about__mockup">
+      <div class="about__details">
+        <h2>Featured </h2>
+        <p>Slim Profile, easy to hold and loaded with butter.</p>
+        <p>This is the one you have been waiting for</p>
+        <button>Learn More →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Instant Grams</h2>
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="">
+      <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?size=626&ext=jpg" alt="">
+      <img src="https://media.istockphoto.com/photos/assorted-indian-recipes-food-various-picture-id922783734?k=20&m=922783734&s=612x612&w=0&h=_oV4oOrb8kC4RVgAI6RrGfQ8lIKsnP89lwwjHfhxUzQ=" alt="">
+      <img src="https://cdn.vox-cdn.com/thumbor/iDTVBhsqadya0SDyqErzLsKpyo0=/0x0:6720x4480/1200x800/filters:focal(2823x1703:3897x2777)/cdn.vox-cdn.com/uploads/chorus_image/image/65606841/ALDR6634.0.jpg" alt="">
+      <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="">
+      
+    </section>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>
+

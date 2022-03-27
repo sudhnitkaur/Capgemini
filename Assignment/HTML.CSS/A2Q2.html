@@ -1,0 +1,173 @@
+<html><div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"> DayBook Check-In</h1>
+    <p id="description" class="description text-center">
+      Thankyou for being here!
+    </p>
+    <link rel="stylesheet" href="style2Q2.css">
+  </header>
+  <body>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>
+        You are 
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="prefer not">prefer not</option>
+       
+      </select>
+    </div>
+    <div class="form-group">
+      <p>How are you feeling?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>I'm feeling </option>
+        <option value="terrible">terrible</option>
+        <option value="great">great</option>
+        <option value="pretty good">pretty good</option>
+        <option value="just fine">just fine</option>
+        <option value="kinda gloomy">kinda gloomy</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you write?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />no</label
+      >
+
+      
+    </div>
+
+    
+
+    <div class="form-group">
+      <p>
+        What activities influence your feeling?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label>
+        <input
+          name="user-recommend"
+          value="work"
+          type="checkbox"
+          class="input-checkbox"
+          checked
+        />work</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Family"
+          type="checkbox"
+          class="input-checkbox"
+        />Family</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Relationship"
+          type="checkbox"
+          class="input-checkbox"
+        />Relationship</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Health"
+          type="checkbox"
+          class="input-checkbox"
+        />Health</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Food"
+          type="checkbox"
+          class="input-checkbox"
+        />Food</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Sleep"
+          type="checkbox"
+          class="input-checkbox"
+        />Sleep</label
+      >
+      
+    </div>
+
+    <div class="form-group">
+      <p>List down why these things made your day. </p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="I'm feeling great because of ....."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+
